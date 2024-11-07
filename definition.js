@@ -125,7 +125,7 @@ Blockly.Python['change_relay_address'] = function (block) {
   var new_address = Blockly.Python.valueToCode(block, 'new_address', Blockly.Python.ORDER_ATOMIC);
   
   // Sử dụng biến code để tạo đối tượng mới mỗi lần thay đổi địa chỉ
-  var code = `relay_${old_address} = RelayController(${new_address})\n`;
+  var code = `relay_${old_address} = RelayController(${old_address})\n`;
   code += `relay_${old_address}.change_relay_address(${new_address})\n`;
   code += `relay_${new_address} = RelayController(${new_address})\n`;
   return code;
