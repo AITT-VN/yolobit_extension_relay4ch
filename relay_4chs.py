@@ -1,5 +1,6 @@
 from machine import SoftI2C, Pin
 import time
+from yolobit import *
 
 CMD_CHANNEL_CTRL = 0x10
 CMD_SAVE_I2C_ADDR = 0x11
@@ -7,7 +8,7 @@ I2C_ADDR = 0x11
 
 class RelayController:
     def __init__(self, addr=I2C_ADDR):
-        self.i2c = SoftI2C(scl=12, sda=11, freq=100000)
+        self.i2c = SoftI2C(scl=pin19.pin, sda=pin20.pin, freq=100000)
         self.addr = addr
         self.channel_state = 0x00
     
