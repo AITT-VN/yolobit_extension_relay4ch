@@ -107,6 +107,12 @@ Blockly.Blocks['change_relay_address'] = {
           "type": "input_value",
           "name": "new_address",
           "check": "Number"
+        },
+        {
+          "type": "input_dummy"  // Khoảng trống giữa các trường
+        },
+        {
+          "type": "input_dummy"  // Khoảng trống giữa các trường
         }
       ],
       "previousStatement": null,
@@ -123,8 +129,7 @@ Blockly.Python['change_relay_address'] = function (block) {
   var old_address = Blockly.Python.valueToCode(block, 'old_address', Blockly.Python.ORDER_ATOMIC);
   var new_address = Blockly.Python.valueToCode(block, 'new_address', Blockly.Python.ORDER_ATOMIC);
   Blockly.Python.definitions_['create_relay_driver'] = 'relay_' + new_address + ' = RelayController(' + old_address + ')';
-  var code = "";
-  var code = `relay_${new_address}.change_relay_address(${new_address})\n`;  
+  var code = `relay_${old_address}.change_relay_address(${new_address})\n`;  
   return code;
 };
 
