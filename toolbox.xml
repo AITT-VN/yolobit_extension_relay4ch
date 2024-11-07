@@ -27,7 +27,6 @@
         </block>
       </value>
     </block>
-
     <block type="control_relay_at_address">
     <field name="state">1</field>
     <field name="relay">1</field>
