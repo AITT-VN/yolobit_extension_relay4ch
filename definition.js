@@ -104,6 +104,9 @@ Blockly.Blocks['change_relay_address'] = {
           "check": "Number"
         },
         {
+          "type": "input_dummy"  // Khoảng trống giữa old_address và new_address
+        },
+        {
           "type": "input_value",
           "name": "new_address",
           "check": "Number"
