@@ -96,13 +96,14 @@ Blockly.Blocks['change_relay_address'] = {
   init: function () {
     this.jsonInit({
       "type": "change_relay_address",
-      "message0": "đổi địa chỉ relay %1 thành %2",
+      "message0": "đổi địa chỉ relay %1 %2 thành %3",
       "args0": [
         {
           "type": "input_value",
           "name": "old_address",
           "check": "Number"
         },
+        { "type": "input_dummy" },
         {
           "type": "input_value",
           "name": "new_address",
