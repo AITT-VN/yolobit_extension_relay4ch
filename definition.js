@@ -177,7 +177,6 @@ Blockly.Python['control_relay_at_address'] = function (block) {
   var state = block.getFieldValue('state');
   var relay = block.getFieldValue('relay');
   var address = Blockly.Python.valueToCode(block, 'address', Blockly.Python.ORDER_ATOMIC);
-  Blockly.Python.definitions_['create_relay_driver'] = 'relay_' + address + ' = RelayController(' + address + ')';
   var code = "";
 
   var relay_code = (relay == "tất cả") ? '0' : relay;  // Chọn relay cụ thể hoặc tất cả
@@ -227,7 +226,6 @@ Blockly.Python['read_relay_status_at_address'] = function (block) {
   Blockly.Python.definitions_['import_relay_driver'] = 'from relay_4chs import *';
   var relay = block.getFieldValue('relay');
   var address = Blockly.Python.valueToCode(block, 'address', Blockly.Python.ORDER_ATOMIC);
-  Blockly.Python.definitions_['create_relay_driver'] = 'relay_' + address + ' = RelayController(' + address + ')';
   var code = "";
   var relay_code = (relay == "tất cả") ? '0' : relay;  
   var code = `relay_${address}.get_relay(${relay_code})`;
