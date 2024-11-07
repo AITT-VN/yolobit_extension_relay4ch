@@ -128,7 +128,7 @@ Blockly.Python['change_relay_address'] = function (block) {
   code += `  relay_${old_address} = RelayController(${old_address})\n`;
   code += `relay_${old_address}.change_relay_address(${new_address})\n`;
   code += `relay_${new_address} = RelayController(${new_address})\n`;
-  code += `time.sleep_ms(10)\n`;
+  code += `time.sleep_ms(100)\n`;
   return code;
 };
 
