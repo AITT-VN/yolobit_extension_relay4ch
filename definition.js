@@ -92,34 +92,34 @@ Blockly.Python['relay_get_state'] = function(block) {
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Blocks['change_relay_address'] = {
-  init: function () {
-    this.jsonInit({
-      "type": "change_relay_address",
-      "message0": "đổi địa chỉ relay %1 thành %2",
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "old_address",
-          "check": "Number"
-        },
-        {
-          "type": "input_dummy"  // Khoảng trống giữa old_address và new_address
-        },
-        {
-          "type": "input_value",
-          "name": "new_address",
-          "check": "Number"
-        }
-      ],
-      "previousStatement": null,
-      "nextStatement": null,
-      "colour": "#18820c",
-      "tooltip": "Đổi địa chỉ của một relay từ địa chỉ cũ sang địa chỉ mới",
-      "helpUrl": ""
-    });
-  }
-};
+// Blockly.Blocks['change_relay_address'] = {
+//   init: function () {
+//     this.jsonInit({
+//       "type": "change_relay_address",
+//       "message0": "đổi địa chỉ relay %1 thành %2",
+//       "args0": [
+//         {
+//           "type": "input_value",
+//           "name": "old_address",
+//           "check": "Number"
+//         },
+//         {
+//           "type": "input_dummy"  // Khoảng trống giữa old_address và new_address
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "new_address",
+//           "check": "Number"
+//         }
+//       ],
+//       "previousStatement": null,
+//       "nextStatement": null,
+//       "colour": "#18820c",
+//       "tooltip": "Đổi địa chỉ của một relay từ địa chỉ cũ sang địa chỉ mới",
+//       "helpUrl": ""
+//     });
+//   }
+// };
 
 Blockly.Python['change_relay_address'] = function (block) {
   Blockly.Python.definitions_['import_relay_driver'] = 'from relay_4chs import *';
