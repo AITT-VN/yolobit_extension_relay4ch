@@ -124,8 +124,8 @@ Blockly.Python['change_relay_address'] = function (block) {
   var old_address = Blockly.Python.valueToCode(block, 'old_address', Blockly.Python.ORDER_ATOMIC);
   var new_address = Blockly.Python.valueToCode(block, 'new_address', Blockly.Python.ORDER_ATOMIC);
   
-  var code = `if relay_${old_address} not in globals():\n`;
-  code += `  'relay_${old_address}' = RelayController(${old_address})\n`;
+  var code = `if 'relay_${old_address}' not in globals():\n`;
+  code += `  relay_${old_address} = RelayController(${old_address})\n`;
 
   code += `relay_${old_address}.change_relay_address(${new_address})\n`;
   code += `relay_${new_address} = RelayController(${new_address})\n`;
