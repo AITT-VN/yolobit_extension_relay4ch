@@ -1,16 +1,11 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="RELAY 4CHS" colour="#18820c" icon="toggle-on">
     <block type="relay_toggle_control">
-      <field name="relay">
-        <shadow type="math_number">
-          <field name="NUM">3</field>
-        </shadow>
-      </field>
-      <field name="state">
-        <shadow type="math_number">
-          <field name="NUM">0</field> <!-- TẮT -->
-        </shadow>
-      </field>
+      <field name="state">1</field> <!-- Giá trị mặc định: Bật -->
+      <field name="relay">1</field> <!-- Giá trị mặc định: Relay 1 -->
+    </block>
+    <block type="relay_get_state">
+      <field name="relay">1</field>
     </block>
     <block type="relay_get_state">
       <field name="relay">1</field>
