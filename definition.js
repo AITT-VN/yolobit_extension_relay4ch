@@ -129,7 +129,7 @@ Blockly.Blocks['control_relay_at_address'] = {
   init: function () {
     this.jsonInit({
       "type": "control_relay_at_address",
-      "message0": "relay 4 kênh %1 relay %2 địa chỉ %3",
+      "message0": "relay 4 kênh %1%2 địa chỉ %3",
       "args0": [
         {
           "type": "field_dropdown",
@@ -188,7 +188,7 @@ Blockly.Blocks['read_relay_status_at_address'] = {
   init: function () {
     this.jsonInit({
       "type": "read_relay_status_at_address",
-      "message0": "relay 4 kênh đọc trạng thái relay %1 địa chỉ %2",
+      "message0": "relay 4 kênh đọc trạng thái %1 địa chỉ %2",
       "args0": [
         {
           "type": "field_dropdown",
