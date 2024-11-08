@@ -2,7 +2,7 @@ Blockly.Blocks['relay_toggle_control'] = {
   init: function () {
     this.jsonInit({
       "type": "relay_toggle_control",
-      "message0": "%1 relay %2",
+      "message0": "relay 4 kênh %1 relay %2",
       "args0": [
         {
           "type": "field_dropdown",
@@ -63,7 +63,7 @@ Blockly.Blocks['relay_get_state'] = {
   init: function() {
     this.jsonInit({
       "type": "relay_get_state",
-      "message0": "đọc trạng thái relay %1",
+      "message0": "relay 4 kênh đọc trạng thái relay %1",
       "args0": [
         {
           "type": "field_dropdown",
