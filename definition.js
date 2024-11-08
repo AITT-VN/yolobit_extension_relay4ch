@@ -136,7 +136,7 @@ Blockly.Blocks['control_relay_at_address'] = {
   init: function () {
     this.jsonInit({
       "type": "control_relay_at_address",
-      "message0": "%1 relay %2 tại địa chỉ %3",
+      "message0": "%1 relay %2 địa chỉ %3",
       "args0": [
         {
           "type": "field_dropdown",
