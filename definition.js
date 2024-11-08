@@ -1,7 +1,7 @@
-Blockly.Blocks['relay_toggle_control'] = {
+Blockly.Blocks['relay_toggle_control1'] = {
   init: function () {
     this.jsonInit({
-      "type": "relay_toggle_control",
+      "type": "relay_toggle_control1",
       "message0": "%1 relay %2",
       "args0": [
         {
@@ -34,7 +34,7 @@ Blockly.Blocks['relay_toggle_control'] = {
   }
 };
 
-Blockly.Python['relay_toggle_control'] = function (block) {
+Blockly.Python['relay_toggle_control1'] = function (block) {
   Blockly.Python.definitions_['import_relay_driver'] = 'from relay_4chs import *';
   var state = block.getFieldValue('state');
   var relay = block.getFieldValue('relay');
